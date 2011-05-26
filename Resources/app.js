@@ -28,7 +28,10 @@ function set_texts() {
 	if (typeof(text) != "undefined") {
 		label1.text = 'Päivä: '+current_day(),
 		infoLabel.text = text["info"];
-	}	
+	} else {
+		label1.text = "Päivälle ei ohjelmaa";
+		infoLabel.text = "";
+	}
 }
 
 // create tab group
